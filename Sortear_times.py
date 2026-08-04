@@ -205,7 +205,6 @@ def montar_times(jogadores, num_times):
 
 
 def montar_texto_copia(times, nomes_times):
-    """Monta o texto exatamente no formato pedido para a área de transferência."""
     blocos = []
     for i, time in enumerate(times):
         nome_time = nomes_times[i]
@@ -218,7 +217,6 @@ def montar_texto_copia(times, nomes_times):
 
 
 def botao_copiar(texto, key):
-    """Renderiza um botão 'Copiar' que copia `texto` para a área de transferência."""
     texto_escapado = (
         texto.replace("\\", "\\\\")
         .replace("`", "\\`")
