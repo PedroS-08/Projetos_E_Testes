@@ -42,6 +42,8 @@ JOGADORES = [
     {"nome": "Otávio", "nota": 7.5},
     {"nome": "Prejuízo", "nota": 6.0},
     {"nome": "Alan", "nota": 6.5},
+    {"nome": "Schettini", "nota": 5.5},
+    {"nome": "Ryan", "nota": 6.5},
 ]
 
 
@@ -51,6 +53,7 @@ REGRAS_GOLEIRO = {
     "Otávio": {"linha": 5.0, "gol": 7.5},
     "Trufa":  {"linha": 3.0, "gol": 6.5},
     "Gusta":  {"linha": 7.5, "gol": 8.0},
+    "Ryan":  {"linha": 5.0, "gol": 6.5},
 }
 
 NOMES_TIMES = {
