@@ -22,7 +22,7 @@ JOGADORES = [
     {"nome": "Matheus", "nota": 7.0},
     {"nome": "Diego", "nota": 6.0},
     {"nome": "Conrado", "nota": 5.5},
-    {"nome": "Guilherme", "nota": 6.0},
+    {"nome": "Guilherme", "nota": 5.0},
     {"nome": "Tulin", "nota": 7.5},
     {"nome": "Luiz", "nota": 7.0},
     {"nome": "Samuka", "nota": 7.0},
