@@ -6,11 +6,11 @@ import random
 JOGADORES = [
     {"nome": "Pedrin", "nota": 6.5},
     {"nome": "Nicolas", "nota": 9.2},
-    {"nome": "Marcos", "nota": 9.2},
+    {"nome": "Marcos", "nota": 9.0},
     {"nome": "Pedro", "nota": 9.0},
     {"nome": "Pedrão", "nota": 5.2},
     {"nome": "Artin", "nota": 5.2},
-    {"nome": "Caio", "nota": 4.0},
+    {"nome": "Caio", "nota": 3.0},
     {"nome": "Cleber", "nota": 7.5},
     {"nome": "Thiago", "nota": 7.5},
     {"nome": "Gui", "nota": 6.5},
@@ -26,7 +26,7 @@ JOGADORES = [
     {"nome": "Tulin", "nota": 7.5},
     {"nome": "Luiz", "nota": 7.0},
     {"nome": "Samuka", "nota": 7.0},
-    {"nome": "Chu", "nota": 7.5},
+    {"nome": "Chu", "nota": 8.0},
     {"nome": "João V.", "nota": 6.2},
     {"nome": "Leo", "nota": 4.0},
     {"nome": "Didi", "nota": 5.5},
@@ -46,7 +46,7 @@ JOGADORES = [
     {"nome": "Ryan", "nota": 6.5},
     {"nome": "Gabriel", "nota": 7.0},
     {"nome": "Bernardo", "nota": 6.5},
-    {"nome": "Wilson", "nota": 5.5},
+    {"nome": "Wilson", "nota": 7.0},
 ]
 
 
