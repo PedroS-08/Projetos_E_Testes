@@ -47,6 +47,7 @@ JOGADORES = [
     {"nome": "Gabriel", "nota": 7.0},
     {"nome": "Bernardo", "nota": 6.5},
     {"nome": "Wilson", "nota": 7.0},
+    {"nome": "Kaio Giarola", "nota": 6.0},
 ]
 
 
