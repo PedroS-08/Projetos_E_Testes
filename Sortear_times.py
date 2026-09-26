@@ -4,53 +4,52 @@ import random
 
 
 JOGADORES = [
-    {"nome": "Pedrin", "nota": 6.5},
-    {"nome": "Nicolas", "nota": 9.2},
-    {"nome": "Marcos", "nota": 9.0},
-    {"nome": "Pedro", "nota": 9.0},
-    {"nome": "Pedrão", "nota": 5.2},
-    {"nome": "Artin", "nota": 5.2},
-    {"nome": "Caio", "nota": 3.0},
-    {"nome": "Cleber", "nota": 7.5},
-    {"nome": "Thiago", "nota": 7.5},
-    {"nome": "Gui", "nota": 6.5},
-    {"nome": "Gusta", "nota": 8.0},
-    {"nome": "Trufa", "nota": 2.5},
-    {"nome": "Augusto", "nota": 2.5},
-    {"nome": "Dinali", "nota": 3.0},
-    {"nome": "Rios", "nota": 7.5},
-    {"nome": "Matheus", "nota": 7.0},
-    {"nome": "Diego", "nota": 6.0},
-    {"nome": "Conrado", "nota": 5.5},
-    {"nome": "Guilherme", "nota": 5.0},
-    {"nome": "Tulin", "nota": 7.5},
-    {"nome": "Luiz", "nota": 7.0},
-    {"nome": "Samuka", "nota": 7.0},
-    {"nome": "Chu", "nota": 8.0},
-    {"nome": "João V.", "nota": 6.2},
-    {"nome": "Leo", "nota": 4.0},
-    {"nome": "Didi", "nota": 5.5},
-    {"nome": "Cipriani", "nota": 9.5},
-    {"nome": "Davi", "nota": 6.0},
-    {"nome": "Julis", "nota": 7.5},
-    {"nome": "João-limar", "nota": 5.5},
-    {"nome": "Davi Mogli", "nota": 8.0},
-    {"nome": "Renan", "nota": 4.5},
-    {"nome": "Surdin", "nota": 9.0},
-    {"nome": "Maladeza", "nota": 6.0},
-    {"nome": "Lacerda", "nota": 5.0},
-    {"nome": "Otávio", "nota": 7.5},
-    {"nome": "Prejuízo", "nota": 6.0},
-    {"nome": "Alan", "nota": 6.5},
-    {"nome": "Schettini", "nota": 5.5},
-    {"nome": "Ryan", "nota": 6.5},
-    {"nome": "Gabriel", "nota": 7.0},
-    {"nome": "Bernardo", "nota": 6.5},
-    {"nome": "Wilson", "nota": 7.0},
-    {"nome": "Kaio Giarola", "nota": 6.0},
-    {"nome": "Hick D", "nota": 4.2},
+    {"nome": "Alan", "nota": 6.5, "posicao": "MEI"},
+    {"nome": "Artin", "nota": 5.2, "posicao": "ATA"},
+    {"nome": "Augusto", "nota": 2.5, "posicao": "DEF"},
+    {"nome": "Bernardo", "nota": 6.5, "posicao": "ATA"},
+    {"nome": "Caio", "nota": 3.0, "posicao": "DEF"},
+    {"nome": "Chu", "nota": 8.0, "posicao": "ATA"},
+    {"nome": "Cipriani", "nota": 9.5, "posicao": "MEI"},
+    {"nome": "Cleber", "nota": 7.5, "posicao": "DEF"},
+    {"nome": "Conrado", "nota": 5.5, "posicao": "ATA"},
+    {"nome": "Davi", "nota": 6.0, "posicao": "ATA"},
+    {"nome": "Davi Mogli", "nota": 8.0, "posicao": "ATA"},
+    {"nome": "Dinali", "nota": 3.0, "posicao": "ATA"},
+    {"nome": "Didi", "nota": 5.5, "posicao": "DEF"},
+    {"nome": "Diego", "nota": 6.2, "posicao": "DEF"},
+    {"nome": "Gabriel", "nota": 7.0, "posicao": "ATA"},
+    {"nome": "Guilherme", "nota": 5.0, "posicao": "MEI"},
+    {"nome": "Gui", "nota": 6.5, "posicao": "DEF"},
+    {"nome": "Gusta", "nota": 8.0, "posicao": "MEI"},
+    {"nome": "Hick D", "nota": 4.2, "posicao": "DEF"},
+    {"nome": "João V.", "nota": 6.2, "posicao": "MEI"},
+    {"nome": "João-limar", "nota": 5.5, "posicao": "ATA"},
+    {"nome": "Julis", "nota": 7.5, "posicao": "MEI"},
+    {"nome": "Kaio Giarola", "nota": 6.0, "posicao": "ATA"},
+    {"nome": "Lacerda", "nota": 5.0, "posicao": "ATA"},
+    {"nome": "Leo", "nota": 4.0, "posicao": "DEF"},
+    {"nome": "Luiz", "nota": 7.0, "posicao": "ATA"},
+    {"nome": "Maladeza", "nota": 6.0, "posicao": "ATA"},
+    {"nome": "Marcos", "nota": 9.0, "posicao": "MEI"},
+    {"nome": "Matheus", "nota": 7.0, "posicao": "ATA"},
+    {"nome": "Nicolas", "nota": 9.2, "posicao": "ATA"},
+    {"nome": "Otávio", "nota": 7.5, "posicao": "DEF"},
+    {"nome": "Pedrão", "nota": 5.2, "posicao": "DEF"},
+    {"nome": "Pedro", "nota": 9.0, "posicao": "MEI"},
+    {"nome": "Pedrin", "nota": 6.5, "posicao": "DEF"},
+    {"nome": "Prejuízo", "nota": 6.0, "posicao": "ATA"},
+    {"nome": "Renan", "nota": 4.5, "posicao": "MEI"},
+    {"nome": "Rios", "nota": 7.5, "posicao": "ATA"},
+    {"nome": "Ryan", "nota": 6.5, "posicao": "DEF"},
+    {"nome": "Samuka", "nota": 7.0, "posicao": "MEI"},
+    {"nome": "Schettini", "nota": 5.5, "posicao": "MEI"},
+    {"nome": "Surdin", "nota": 9.0, "posicao": "MEI"},
+    {"nome": "Thiago", "nota": 7.5, "posicao": "ATA"},
+    {"nome": "Trufa", "nota": 2.5, "posicao": "DEF"},
+    {"nome": "Tulin", "nota": 7.5, "posicao": "DEF"},
+    {"nome": "Wilson", "nota": 7.0, "posicao": "DEF"},
 ]
-
 
 REGRAS_GOLEIRO = {
     "Pedrão": {"linha": 5.0, "gol": 7.0},
@@ -75,7 +74,8 @@ EMOJI_TIMES = {
     "Time Amarelo": "🟡",
 }
 
-st.set_page_config(page_title="Sorteador de Times", page_icon="⚽", layout="centered")
+st.set_page_config(page_title="Sorteador de Times",
+                   page_icon="⚽", layout="centered")
 
 st.title("⚽ Sorteador de Times Fut")
 st.write("Marque quem vai jogar e escolha quantos times dividir.")
@@ -106,13 +106,15 @@ for i, j in enumerate(JOGADORES):
     with cols[i % 3]:
         st.checkbox(f"{j['nome']}", key=chave)
 
-selecionados_base = [j for j in JOGADORES if st.session_state[f"presente_{j['nome']}"]]
+selecionados_base = [
+    j for j in JOGADORES if st.session_state[f"presente_{j['nome']}"]]
 qtd_selecionados = len(selecionados_base)
 
 st.markdown(f"**Jogadores selecionados: {qtd_selecionados}**")
 
 
-especiais_selecionados = [j for j in selecionados_base if j["nome"] in REGRAS_GOLEIRO]
+especiais_selecionados = [
+    j for j in selecionados_base if j["nome"] in REGRAS_GOLEIRO]
 
 if especiais_selecionados:
     st.header("Gol ou linha?")
@@ -144,7 +146,8 @@ for j in selecionados_base:
 
 st.header("Quantidade de times")
 
-opcoes_validas = [n for n in (2, 3, 4) if qtd_selecionados > 0 and qtd_selecionados % n == 0]
+opcoes_validas = [n for n in (
+    2, 3, 4) if qtd_selecionados > 0 and qtd_selecionados % n == 0]
 
 if not opcoes_validas:
     st.error(
@@ -162,14 +165,16 @@ else:
 
 
 def montar_times(jogadores, num_times):
-    """
-    Distribui os jogadores em `num_times` times com tamanhos iguais,
-    tentando equilibrar a soma de notas. Goleiros (jogadores com
-    flag "gol" = True) são espalhados um por time sempre que possível.
-    """
     time_size = len(jogadores) // num_times
+
     times = [[] for _ in range(num_times)]
     somas = [0.0] * num_times
+
+    limites = {
+        "DEF": 2,
+        "MEI": 1,
+        "ATA": 2
+    }
 
     goleiros = [j for j in jogadores if j.get("gol")]
     linha = [j for j in jogadores if not j.get("gol")]
@@ -179,34 +184,65 @@ def montar_times(jogadores, num_times):
     random.shuffle(ordem_times)
 
     aviso_goleiros_duplicados = False
+
     idx_time = 0
+
     for g in goleiros:
-        tentativas = 0
-        time_escolhido = None
-        while tentativas < num_times:
-            candidato = ordem_times[idx_time % num_times]
-            idx_time += 1
-            tentativas += 1
-            tem_goleiro = any(p.get("gol") for p in times[candidato])
-            if not tem_goleiro and len(times[candidato]) < time_size:
-                time_escolhido = candidato
-                break
-        if time_escolhido is None:
+        candidatos = [
+            i for i in range(num_times)
+            if len(times[i]) < time_size
+        ]
+
+        candidatos_sem_goleiro = [
+            i for i in candidatos
+            if not any(p.get("gol") for p in times[i])
+        ]
+
+        if candidatos_sem_goleiro:
+            candidatos = candidatos_sem_goleiro
+
+        time_escolhido = min(
+            candidatos,
+            key=lambda i: somas[i]
+        )
+
+        if any(p.get("gol") for p in times[time_escolhido]):
             aviso_goleiros_duplicados = True
-            candidatos = [i for i in range(num_times) if len(times[i]) < time_size]
-            time_escolhido = min(candidatos, key=lambda i: somas[i])
 
         times[time_escolhido].append(g)
         somas[time_escolhido] += g["nota"]
 
-
-
-    random.shuffle(linha)  
+    random.shuffle(linha)
     linha.sort(key=lambda j: j["nota"], reverse=True)
 
     for jogador in linha:
-        candidatos = [i for i in range(num_times) if len(times[i]) < time_size]
-        time_escolhido = min(candidatos, key=lambda i: somas[i])
+        posicao = jogador.get("posicao", "ATA")
+
+        candidatos = []
+
+        for i in range(num_times):
+            if len(times[i]) >= time_size:
+                continue
+
+            quantidade_posicao = sum(
+                1 for p in times[i]
+                if p.get("posicao") == posicao
+            )
+
+            if quantidade_posicao < limites[posicao]:
+                candidatos.append(i)
+
+        if not candidatos:
+            candidatos = [
+                i for i in range(num_times)
+                if len(times[i]) < time_size
+            ]
+
+        time_escolhido = min(
+            candidatos,
+            key=lambda i: somas[i]
+        )
+
         times[time_escolhido].append(jogador)
         somas[time_escolhido] += jogador["nota"]
 
@@ -304,12 +340,13 @@ if "ultimo_sorteio" in st.session_state and num_times and st.session_state.get("
             st.subheader(nomes_times[i])
             for j in sorted(time, key=lambda x: x["nota"], reverse=True):
                 marcador = " GOL" if j.get("gol") else ""
-                st.write(f"{j['nome']}{marcador}")
+                st.write(f"{j['nome']} — {j.get('posicao', '')}{marcador}")
             st.markdown(f"**Soma:** {soma:.1f}  \n**Média:** {media:.2f}")
 
     somas = [sum(j["nota"] for j in t) for t in times]
     diferenca = max(somas) - min(somas)
-    st.info(f"Diferença entre o time mais forte e o mais fraco: **{diferenca:.1f} pontos**")
+    st.info(
+        f"Diferença entre o time mais forte e o mais fraco: **{diferenca:.1f} pontos**")
 
     st.markdown("---")
     texto_copia = montar_texto_copia(times, nomes_times)
