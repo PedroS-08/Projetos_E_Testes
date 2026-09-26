@@ -141,7 +141,12 @@ for j in selecionados_base:
     else:
         eh_gol = False
         nota_efetiva = j["nota"]
-    selecionados.append({"nome": nome, "nota": nota_efetiva, "gol": eh_gol})
+    selecionados.append({
+        "nome": nome,
+        "nota": nota_efetiva,
+        "gol": eh_gol,
+        "posicao": j["posicao"]
+    })
 
 
 st.header("Quantidade de times")
