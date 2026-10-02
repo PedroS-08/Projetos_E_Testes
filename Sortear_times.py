@@ -46,6 +46,7 @@ JOGADORES = [
     {"nome": "Schettini", "nota": 5.5, "posicao": "MEI"},
     {"nome": "Surdin", "nota": 9.0, "posicao": "MEI"},
     {"nome": "Thiago", "nota": 7.5, "posicao": "ATA"},
+    {"nome": "Thiago Bisnaga", "nota": 6.5, "posicao": "MEI"},
     {"nome": "Trufa", "nota": 2.5, "posicao": "DEF"},
     {"nome": "Tulin", "nota": 7.5, "posicao": "DEF"},
     {"nome": "Wilson", "nota": 7.0, "posicao": "DEF"},
