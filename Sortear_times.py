@@ -170,6 +170,37 @@ else:
     )
 
 
+
+def add_jogador(nome, nota, posicao, eh_goleiro, nota_linha, nota_gol, senha):
+    if senha != "futzin08":
+        st.error("Senha incorreta.")
+        return
+
+    if not nome.strip():
+        st.error("Digite o nome do jogador.")
+        return
+
+    if any(j["nome"].lower() == nome.strip().lower() for j in JOGADORES):
+        st.error("Esse jogador já está cadastrado.")
+        return
+
+    JOGADORES.append({
+        "nome": nome.strip(),
+        "nota": nota if eh_goleiro == "Não" else nota_linha,
+        "posicao": posicao
+    })
+
+    if eh_goleiro == "Sim":
+        REGRAS_GOLEIRO[nome.strip()] = {
+            "linha": nota_linha,
+            "gol": nota_gol
+        }
+
+    st.success(f"{nome.strip()} foi adicionado ao catálogo!")
+    st.session_state["mostrar_adicionar"] = False
+    st.rerun()
+
+
 def montar_times(jogadores, num_times):
     time_size = len(jogadores) // num_times
 
@@ -322,6 +353,72 @@ def botao_copiar(texto, key):
 st.header("Sorteio")
 
 sortear = st.button("🔀 Sortear times", disabled=(num_times is None))
+if st.button("➕ Adicionar jogador", type="primary"):
+    st.session_state["mostrar_adicionar"] = True
+
+if st.session_state.get("mostrar_adicionar", False):
+    st.subheader("Adicionar jogador")
+
+    senha = st.text_input("Senha", type="password", key="senha_adicionar")
+
+    nome_novo = st.text_input("Nome do jogador", key="nome_novo")
+    nota_novo = st.number_input(
+        "Nota do jogador",
+        min_value=0.0,
+        max_value=10.0,
+        step=0.1,
+        key="nota_novo"
+    )
+    posicao_novo = st.selectbox(
+        "Posição",
+        ["DEF", "MEI", "ATA"],
+        key="posicao_novo"
+    )
+
+    eh_goleiro = st.radio(
+        "O jogador também joga no gol?",
+        ["Não", "Sim"],
+        horizontal=True,
+        key="eh_goleiro_novo"
+    )
+
+    nota_linha = nota_novo
+    nota_gol = 0.0
+
+    if eh_goleiro == "Sim":
+        nota_linha = st.number_input(
+            "Nota na linha",
+            min_value=0.0,
+            max_value=10.0,
+            step=0.1,
+            key="nota_linha_novo"
+        )
+        nota_gol = st.number_input(
+            "Nota no gol",
+            min_value=0.0,
+            max_value=10.0,
+            step=0.1,
+            key="nota_gol_novo"
+        )
+
+    c1, c2 = st.columns(2)
+
+    with c1:
+        if st.button("Adicionar", key="confirmar_adicionar"):
+            add_jogador(
+                nome_novo,
+                nota_novo,
+                posicao_novo,
+                eh_goleiro,
+                nota_linha,
+                nota_gol,
+                senha
+            )
+
+    with c2:
+        if st.button("Cancelar", key="cancelar_adicionar"):
+            st.session_state["mostrar_adicionar"] = False
+            st.rerun()
 
 if sortear and num_times:
     times, aviso = montar_times(selecionados, num_times)
